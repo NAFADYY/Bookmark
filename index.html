@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./bookmark.png" type="image/svg+xml" />
+    <title>Bookmarker</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body onload="fetchBookmarks()">
+    <div class="container-fluid w-75">
+      <div class="header clearfix">
+        <nav></nav>
+        <h3 class="text-center fw-bold fs-1 my-4 position-relative">
+          Bookmarker
+        </h3>
+      </div>
+
+      <hr />
+
+      <div class="inputs">
+        <h2 class="text-center text-nowrap fs-4">
+          <i class="fa-solid fa-bookmark"></i> Bookmark Your Favorite Sites
+          <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <form id="myForm">
+          <div class="form-group">
+            <label class="ms-2 fw-bold"
+              ><i class="fa-solid fa-floppy-disk"></i> Site Name</label
+            >
+            <input
+              type="text"
+              class="form-control my-2"
+              id="siteName"
+              placeholder="Website Name"
+            />
+          </div>
+          <div class="form-group">
+            <label class="ms-2 fw-bold mt-3"
+              ><i class="fa-solid fa-link"></i> Site URL</label
+            >
+            <input
+              type="text"
+              class="form-control my-2"
+              id="siteUrl"
+              placeholder="Website URL"
+            />
+          </div>
+          <div class="text-center mt-4">
+            <button
+              type="submit"
+              class="btn btn-success pt-1 pb-1 pe-5 ps-5 fs-4"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <hr />
+
+      <div class="row marketing">
+        <div class="col-md-12">
+          <div id="bookmarksResults"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; 2024 <span class="fw-bold">Ahmed Ragab.</span></p>
+      </footer>
+    </div>
+    <!-- /container -->
+    <script
+      src="https://kit.fontawesome.com/d1abfebc65.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.js"
+      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap');
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #F7ECDE;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+ font-size: 50px;
+ line-height: 60px;
+  font-family: "Pacifico", cursive;
+  isolation: isolate;
+  
+}
+
+.header h3::before {
+    content: "";
+    position: absolute;
+    width: 21%;
+    height: 25%;
+    /* left: 39%; */
+    bottom: 10px;
+    text-align: center;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1;
+  }
+
+  .header h3:hover::before {
+    height: 50%;
+  }
+
+
+hr{
+  border-top: dotted 2px;
+  
+}
+
+.inputs h2{
+  font-family: "Righteous", sans-serif;
+  color: #45A55A;
+}
+
+.inputs input:focus{
+  outline: none !important;
+  border-color: #E1AF5F;
+  box-shadow: 0 0 10px #E1AF5F;
+}
+
+
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+}
